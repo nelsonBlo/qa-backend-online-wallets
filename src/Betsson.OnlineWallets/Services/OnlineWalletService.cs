@@ -4,7 +4,7 @@ using Betsson.OnlineWallets.Exceptions;
 using Betsson.OnlineWallets.Models;
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("Betsson.OnlineWallets.UnitTests")]
+[assembly: InternalsVisibleTo("Betsson.OnlineWallets.Tests")]
 
 namespace Betsson.OnlineWallets.Services
 {
