@@ -12,7 +12,7 @@ namespace Betsson.OnlineWallets.ApiTests
 
         public BetssonOnlineWalletsApiTests()
         {
-            // Configura el cliente de RestSharp que apunta a la URL del contenedor
+            // RestSharp client
             _client = new RestClient("http://localhost:8080"); 
         }
 
@@ -27,7 +27,7 @@ namespace Betsson.OnlineWallets.ApiTests
 
             // Assert
             response.StatusCode.Should().Be(HttpStatusCode.OK);
-            response.Content.Should().Contain("Amount"); // Verifica si el contenido contiene el campo "Amount" de la respuesta
+            response.Content.Should().Contain("amount"); 
         }
 
         
