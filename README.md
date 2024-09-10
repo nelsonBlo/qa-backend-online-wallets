@@ -21,3 +21,16 @@ docker run -p <port>:8080 <image id>
 ```
 http://localhost:<port>/swagger/index.html
 ```
+### Run Unit Tests
+Go to src/Betsson.OnlineWallets.Tests/ and run
+```
+dotnet test
+```
+9 unit test should run to test service layer
+
+### Run API Tests
+Expose microservice with previous steps and go to src/Betsson.OnlineWallets.ApiTests/ and run
+```
+dotnet test
+```
+14 API tests should run to test endpoints behaviour. These scripts should be self explanatory.
